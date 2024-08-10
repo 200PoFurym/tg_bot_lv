@@ -1,0 +1,619 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-08-09 20:35+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: data/gift.py:16 search.py:10
+msgid "Найти пользователя"
+msgstr ""
+
+#: search.py:14
+msgid "Укажите имя пользователя для поиска."
+msgstr ""
+
+#: search.py:21
+msgid "Пользователи с таким именем не найдены."
+msgstr ""
+
+#: search.py:41
+msgid "Нет пользователей, соответствующих вашим критериям."
+msgstr ""
+
+#: search.py:48
+msgid "Произошла ошибка при получении рекомендаций. Пожалуйста, попробуйте позже."
+msgstr ""
+
+#: data/gift.py:115 search.py:55
+msgid "Фото"
+msgstr ""
+
+#: data/gift.py:116 search.py:56
+msgid "Имя"
+msgstr ""
+
+#: data/gift.py:117 search.py:57
+msgid "Возраст"
+msgstr ""
+
+#: data/gift.py:118 search.py:58
+msgid "Город"
+msgstr ""
+
+#: data/gift.py:119 search.py:59
+msgid "Обо мне"
+msgstr ""
+
+#: data/gift.py:125 search.py:66
+msgid "Отправить"
+msgstr ""
+
+#: search.py:73
+msgid "Произошла ошибка при отображении профиля. Пожалуйста, попробуйте позже."
+msgstr ""
+
+#: handlers/profiles.py:148 shortcuts.py:127
+msgid "Начинай общаться!"
+msgstr ""
+
+#: shortcuts.py:129
+msgid ""
+"Извините, Вы не сможете начать общение так как у пользователя приватный "
+"аккаунт"
+msgstr ""
+
+#: data/gift.py:9
+msgid "flowers"
+msgstr ""
+
+#: data/gift.py:10
+msgid "cake"
+msgstr ""
+
+#: data/gift.py:11
+msgid "bunny"
+msgstr ""
+
+#: data/gift.py:12
+msgid "bear"
+msgstr ""
+
+#: data/gift.py:13
+msgid "rocket"
+msgstr ""
+
+#: data/gift.py:20
+msgid "Укажите имя пользователя для поиска"
+msgstr ""
+
+#: data/gift.py:30
+msgid "Пользователь с таким именем не найден."
+msgstr ""
+
+#: data/gift.py:37
+msgid "Произошла ошибка при поиске пользователя. Пожалуйста, попробуйте позже."
+msgstr ""
+
+#: data/gift.py:43 data/gift.py:45 data/gift.py:47
+msgid "Вам отправили {gift}"
+msgstr ""
+
+#: data/gift.py:49
+msgid "Произошла ошибка при отправке подарка. Пожалуйста, попробуйте позже."
+msgstr ""
+
+#: data/gift.py:62 data/gift.py:89
+msgid "Пользователь не найден."
+msgstr ""
+
+#: data/gift.py:66 data/gift.py:93
+msgid "Вы не можете отправить подарок самому себе."
+msgstr ""
+
+#: data/gift.py:73
+msgid "Выберите тип подарка:"
+msgstr ""
+
+#: data/gift.py:75
+msgid "Произошла ошибка при обработке запроса."
+msgstr ""
+
+#: data/gift.py:98
+msgid "Неверный тип подарка."
+msgstr ""
+
+#: data/gift.py:105
+msgid "Подарок успешно отправлен!"
+msgstr ""
+
+#: data/gift.py:106
+msgid "Вы отправили {gift} {receiver_name}!"
+msgstr ""
+
+#: data/gift.py:109
+msgid "Произошла ошибка при выборе подарка."
+msgstr ""
+
+#: data/gift.py:130
+msgid "Произошла ошибка при просмотре профиля. Пожалуйста, попробуйте позже."
+msgstr ""
+
+#: data/gift.py:133 keyboards/reply_kb.py:13
+msgid "Мои подарки"
+msgstr ""
+
+#: data/gift.py:138
+msgid "Вы не получали подарков."
+msgstr ""
+
+#: data/gift.py:145
+msgid ""
+"Подарок от {sender_name}\n"
+"Тип: {gift_type}\n"
+"Дата: {date_sent}\n"
+"Медиа: {media_url}"
+msgstr ""
+
+#: data/language.py:22
+msgid "Выберите язык / Select a language:"
+msgstr ""
+
+#: data/language.py:40
+msgid "Этот язык не поддерживается."
+msgstr ""
+
+#: data/location.py:44 keyboards/reply_kb.py:8
+msgid "Найти поблизости"
+msgstr ""
+
+#: data/location.py:49 data/location.py:69
+msgid "Вы не зарегистрированы. Пожалуйста, зарегистрируйтесь сначала."
+msgstr ""
+
+#: data/location.py:53
+msgid ""
+"Вы исчерпали лимит на просмотр профилей или срок действия ваших "
+"просмотров истек. Поделитесь своим реферальным кодом, чтобы получить "
+"дополнительные просмотры."
+msgstr ""
+
+#: data/location.py:61
+msgid "Поблизости никого нет."
+msgstr ""
+
+#: data/location.py:63 handlers/registration.py:141 keyboards/reply_kb.py:7
+msgid "Получить реферальный код"
+msgstr ""
+
+#: data/location.py:79
+msgid ""
+"Вы получили 20 дополнительных просмотров за использование реферального "
+"кода!"
+msgstr ""
+
+#: data/location.py:81
+msgid "Неверный реферальный код."
+msgstr ""
+
+#: data/location.py:91 keyboards/reply_kb.py:9
+msgid "Топ 100 девушек"
+msgstr ""
+
+#: data/location.py:95 data/location.py:104
+msgid "\n"
+msgstr ""
+
+#: data/location.py:98 data/location.py:107
+msgid "Нет данных для отображения."
+msgstr ""
+
+#: data/location.py:100 keyboards/reply_kb.py:10
+msgid "Топ 100 парней"
+msgstr ""
+
+#: data/verify.py:23 data/verify.py:90
+msgid "покажите два пальца"
+msgstr ""
+
+#: data/verify.py:24 data/verify.py:92
+msgid "поднимите правую руку"
+msgstr ""
+
+#: data/verify.py:25
+msgid "сделайте знак ОК"
+msgstr ""
+
+#: data/verify.py:26 data/verify.py:96
+msgid "покажите ладонь"
+msgstr ""
+
+#: data/verify.py:40
+msgid "Сначала запросите верификацию с жестом."
+msgstr ""
+
+#: data/verify.py:50
+msgid "Пожалуйста, покажите правильный жест."
+msgstr ""
+
+#: data/verify.py:55
+msgid "Не удалось распознать лицо. Пожалуйста, попробуйте снова."
+msgstr ""
+
+#: data/verify.py:63
+msgid "Вы успешно верифицированы!"
+msgstr ""
+
+#: data/verify.py:65
+msgid "Лицо не совпадает с эталонным. Верификация не пройдена."
+msgstr ""
+
+#: data/verify.py:69
+msgid "Вы верифицированы и ваша эталонная фотография сохранена!"
+msgstr ""
+
+#: data/verify.py:74
+msgid "Произошла ошибка при обработке фото. Пожалуйста, попробуйте снова."
+msgstr ""
+
+#: data/verify.py:94
+msgid "сделайте знак OK"
+msgstr ""
+
+#: handlers/profile.py:14
+msgid ""
+"1. Отредактировать мой профиль.\n"
+"2. Изменить фото/видео.\n"
+"3. Изменить текст профиля.\n"
+"4. Просмотреть профили"
+msgstr ""
+
+#: handlers/profile.py:30 keyboards/reply_kb.py:96
+msgid "Выйти"
+msgstr ""
+
+#: handlers/profile.py:37
+msgid ""
+"Тогда ты не будешь знать, кому ты нравишься... Уверены насчет "
+"деактивации?\n"
+"\n"
+"1. Да, деактивируйте мой профиль, пожалуйста.\n"
+"2. Нет, я хочу посмотреть свои матчи."
+msgstr ""
+
+#: handlers/profile.py:45
+msgid ""
+"Надеюсь, вы встретили кого-нибудь с моей помощью! \n"
+"Всегда рад пообщаться. Если скучно, напиши мне - я найду для тебя кого-то"
+" особенного.\n"
+"\n"
+"1. Просмотр профилей"
+msgstr ""
+
+#: handlers/profile.py:61
+msgid "Отправьте фото или видео (до 15 сек)"
+msgstr ""
+
+#: handlers/profile.py:66
+msgid "Введите новый текст профиля"
+msgstr ""
+
+#: handlers/profile.py:73 handlers/profile.py:82 handlers/registration.py:47
+#: keyboards/inline_kb.py:40 keyboards/reply_kb.py:75
+msgid "Отменить"
+msgstr ""
+
+#: handlers/profile.py:95 handlers/profile.py:101
+msgid "Пожалуйста, пришли видео не более 15 секунд"
+msgstr ""
+
+#: handlers/profiles.py:36
+msgid "Нет больше пользователей"
+msgstr ""
+
+#: handlers/profiles.py:57
+msgid "Произошла ошибка"
+msgstr ""
+
+#: handlers/profiles.py:61
+msgid "Нет больше лайков"
+msgstr ""
+
+#: handlers/profiles.py:66
+msgid "Лайк отправлен"
+msgstr ""
+
+#: handlers/profiles.py:69
+msgid "Не удалось поставить лайк"
+msgstr ""
+
+#: handlers/profiles.py:79
+msgid "Введите сообщение или отправьте видео (макс 15 сек)"
+msgstr ""
+
+#: handlers/profiles.py:87
+msgid ""
+"Вы точно хотите подать жалобу? Учтите, если жалоба будет необоснованной, "
+"то вы сами можете быть забанены"
+msgstr ""
+
+#: handlers/profiles.py:101
+msgid "Отменено"
+msgstr ""
+
+#: handlers/profiles.py:116
+msgid "Пожалуйста, напишите текст или отправьте видео"
+msgstr ""
+
+#: handlers/profiles.py:122
+msgid "Вот аккаунты, кому Вы понравились:"
+msgstr ""
+
+#: handlers/profiles.py:127
+msgid "Все лайки удалены"
+msgstr ""
+
+#: handlers/profiles.py:153
+msgid ""
+"Извините, Вы не сможете начать общение, так как у пользователя приватный "
+"аккаунт"
+msgstr ""
+
+#: handlers/profiles.py:171
+msgid ""
+"Пользователь: @{sender_user} ({sender_user_id}) пожаловался на \n"
+"Пользователя: @{account_user} ({account_user_id})\n"
+msgstr ""
+
+#: handlers/profiles.py:182
+msgid "Жалоба отправлена"
+msgstr ""
+
+#: handlers/registration.py:20
+msgid "Вы успешно отменили регистрацию! Возвращаемся в главное меню."
+msgstr ""
+
+#: handlers/registration.py:28
+msgid ""
+"Теперь пришли фото или запиши видео 👍 (до 15 сек), его будут видеть "
+"другие пользователи"
+msgstr ""
+
+#: handlers/registration.py:39
+msgid "Всё верно?"
+msgstr ""
+
+#: handlers/registration.py:42 keyboards/reply_kb.py:30
+msgid "Давай, начнем!"
+msgstr ""
+
+#: handlers/registration.py:44
+msgid ""
+"Настоятельно рекомендуем указать username или в настройках разрешение на "
+"пересылку сообщения иначе Вам не смогут написать те, кого вы лайкните"
+msgstr ""
+
+#: handlers/registration.py:49
+msgid "Отменена регистрация!"
+msgstr ""
+
+#: handlers/registration.py:57
+msgid "Теперь выберите минимальный возраст"
+msgstr ""
+
+#: handlers/registration.py:60 handlers/registration.py:70
+#: handlers/registration.py:83
+msgid "Пожалуйста, введите возраст цифрами"
+msgstr ""
+
+#: handlers/registration.py:67
+msgid "Теперь выберите максимальный возраст"
+msgstr ""
+
+#: handlers/registration.py:79
+msgid "Вы задали возрастной диапазон от"
+msgstr ""
+
+#: handlers/registration.py:79
+msgid "до"
+msgstr ""
+
+#: handlers/registration.py:80
+msgid "Теперь определимся с полом!"
+msgstr ""
+
+#: handlers/registration.py:85 keyboards/reply_kb.py:41
+msgid "Я парень"
+msgstr ""
+
+#: handlers/registration.py:89 keyboards/reply_kb.py:42
+msgid "Я девушка"
+msgstr ""
+
+#: handlers/registration.py:95
+msgid "Пожалуйста, укажите Ваш пол, нажав на кнопку"
+msgstr ""
+
+#: handlers/registration.py:97 keyboards/reply_kb.py:64
+msgid "Парня"
+msgstr ""
+
+#: handlers/registration.py:101 keyboards/reply_kb.py:63
+msgid "Девушку"
+msgstr ""
+
+#: handlers/registration.py:105 keyboards/reply_kb.py:65
+msgid "Мне всё равно"
+msgstr ""
+
+#: handlers/registration.py:114
+msgid "Пожалуйста, выберите правильный пол."
+msgstr ""
+
+#: handlers/registration.py:117
+msgid "Кого Вы ищите?"
+msgstr ""
+
+#: handlers/registration.py:124
+msgid "Пожалуйста, выберите правильный вариант поиска."
+msgstr ""
+
+#: handlers/registration.py:127
+msgid "Из какого ты города?"
+msgstr ""
+
+#: handlers/registration.py:135
+msgid "Как мне тебя называть?"
+msgstr ""
+
+#: handlers/registration.py:149
+msgid "Пожалуйста, сначала зарегистрируйтесь, чтобы получить реферальный код."
+msgstr ""
+
+#: handlers/registration.py:156
+msgid "Пожалуйста, введите имя не более 15 символов"
+msgstr ""
+
+#: handlers/registration.py:163
+msgid "Ваш профиль был успешно создан!"
+msgstr ""
+
+#: handlers/registration.py:163
+msgid "Вы можете просматривать других пользователей, когда они будут вас лайкать!"
+msgstr ""
+
+#: handlers/registration.py:178 keyboards/inline_kb.py:30
+#: keyboards/reply_kb.py:52 keyboards/reply_kb.py:85
+msgid "Да"
+msgstr ""
+
+#: handlers/registration.py:183
+msgid "Произошла ошибка при регистрации. Пожалуйста, попробуйте снова."
+msgstr ""
+
+#: handlers/registration.py:200
+msgid ""
+"Ваша регистрация завершена! Теперь вы можете искать и просматривать "
+"профили других пользователей."
+msgstr ""
+
+#: handlers/registration.py:202 keyboards/inline_kb.py:31
+#: keyboards/reply_kb.py:86
+msgid "Нет"
+msgstr ""
+
+#: handlers/registration.py:203
+msgid "Регистрация отменена."
+msgstr ""
+
+#: handlers/registration.py:206
+msgid "Пожалуйста, ответьте 'Да' или 'Нет'."
+msgstr ""
+
+#: handlers/registration.py:214
+msgid "Пожалуйста, введите возраст цифрами."
+msgstr ""
+
+#: handlers/registration.py:217
+msgid "Теперь укажите город, в котором вы находитесь."
+msgstr ""
+
+#: handlers/registration.py:226
+msgid ""
+"Рекомендуем пройти верификацию, чтобы другие пользователи доверяли вам "
+"больше."
+msgstr ""
+
+#: handlers/registration.py:228
+msgid "Вы не завершили регистрацию. Давайте начнем с вашего возраста."
+msgstr ""
+
+#: handlers/registration.py:231
+msgid "Добро пожаловать обратно!"
+msgstr ""
+
+#: handlers/registration.py:233
+msgid "Вы не зарегистрированы. Давайте начнем с вашего возраста."
+msgstr ""
+
+#: handlers/start.py:24
+msgid ""
+"\n"
+"Сейчас аккаунт выключен от поиска, если Вы начнете просматривать "
+"аккаунты, то Ваш аккаунт вновь включится для поиска другим пользователем"
+msgstr ""
+
+#: handlers/start.py:28
+msgid ""
+"\n"
+"3. Больше не ищу"
+msgstr ""
+
+#: handlers/start.py:30
+msgid ""
+"1. Просмотр профилей.\n"
+"2. Мой профиль.{text}"
+msgstr ""
+
+#: handlers/start.py:42
+msgid ""
+"Добро пожаловать! Я - бот для знакомств. Я помогу тебе найти свою вторую "
+"половинку."
+msgstr ""
+
+#: handlers/start.py:49
+msgid "Ваш аккаунт заблокирован"
+msgstr ""
+
+#: handlers/start.py:55
+msgid "Запустите WebApp"
+msgstr ""
+
+#: handlers/start.py:60
+msgid "Попробуйте наш WebAPP знакомства"
+msgstr ""
+
+#: keyboards/inline_kb.py:38
+msgid "Заблокировать"
+msgstr ""
+
+#: keyboards/inline_kb.py:39
+msgid "Заблокировать отправителя"
+msgstr ""
+
+#: keyboards/inline_kb.py:48
+msgid "Написать"
+msgstr ""
+
+#: keyboards/reply_kb.py:6 keyboards/reply_kb.py:53
+msgid "Изменить анкету"
+msgstr ""
+
+#: keyboards/reply_kb.py:11
+msgid "Отправить подарок"
+msgstr ""
+
+#: keyboards/reply_kb.py:12
+msgid "Профиль"
+msgstr ""
+
+#: keyboards/reply_kb.py:31
+msgid "Я не хочу никого искать"
+msgstr ""
+
+#: keyboards/reply_kb.py:110
+msgid "Оставить текущее"
+msgstr ""
+
