@@ -1,29 +1,24 @@
-import gettext
 import asyncio
-import os
-import logging
-from aiogram import BaseMiddleware
-from aiogram.types import Update
 from aiogram import Bot, Dispatcher, types
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiohttp import web
 from tortoise import Tortoise
 from tortoise.contrib.aiohttp import register_tortoise
 from aiogram.utils.i18n import I18n
-from pathlib import Path
-
-
 from middlewares import CustomI18nMiddleware
 from models import *
 from db_config import TORTOISE_ORM
 import sys
+import os
+
+
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-API_TOKEN = '7326893496:AAGb7q9DFtquWq0yEj5qM9q6pRmd0ZYV3Ok'
+API_TOKEN = '7433580317:AAF0ABfW17wn26oSDA0go-gnWxXEwg413s4'
 I18N_DOMAIN = 'messages'
 LOCALES_DIR = os.path.join(os.path.dirname(__file__), 'locale')
 
@@ -36,8 +31,8 @@ bot = Bot(token=API_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(bot=bot, storage=storage, middlewares=[CustomI18nMiddleware(i18n)])
 
-
-# dp.update.middleware(CustomI18nMiddleware(i18n))
+# CustomI18nMiddleware(i18n).setup(dp)
+dp.update.middleware(CustomI18nMiddleware(i18n))
 # dp.update.outer_middleware(CustomI18nMiddleware(i18n))
 
 async def on_startup(app):
@@ -70,12 +65,11 @@ async def main():
     site = web.TCPSite(runner, 'localhost', 8080)
     await site.start()
     logger.info("Bot started and listening for updates")
-
     from data import gift, language, location, verify
     from handlers import profile, profiles, registration, start
     dp.include_router(router)
-    dp.include_router(start.router)
     dp.include_router(registration.router)
+    dp.include_router(start.router)
     dp.include_router(profiles.router)
     dp.include_router(profile.router)
     dp.include_router(gift.router)

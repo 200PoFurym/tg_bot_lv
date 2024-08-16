@@ -42,7 +42,7 @@ async def bot_start(message: types.Message, state: FSMContext):
             i18n.gettext("Добро пожаловать! Я - бот для знакомств. Я помогу тебе найти свою вторую половинку."),
             reply_markup=reply_kb.begin_registration()
         )
-        await state.set_state(LeomatchRegistration.BEGIN)
+        await state.set_state(LeomatchRegistration.START)
     else:
         account: LeoMatchModel = await get_leo(message.from_user.id)
         if account.blocked:

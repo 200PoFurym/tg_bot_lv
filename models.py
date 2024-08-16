@@ -12,17 +12,15 @@ import string
 router = Router()
 
 class LeomatchRegistration(StatesGroup):
-    BEGIN = State()
+    START = State()
     AGE = State()
-    SEX = State()
-    CITY = State()
     MIN_AGE = State()
     MAX_AGE = State()
-    FULL_NAME = State()
-    WHICH_SEARCH = State()
-    LATITUDE = State()
-    LONGITUDE = State()
+    CITY = State()
     ADDRESS = State()
+    FULL_NAME = State()
+    SEX = State()
+    WHICH_SEARCH = State()
     ABOUT_ME = State()
     SEND_PHOTO = State()
     FINAL = State()
@@ -56,15 +54,16 @@ class User(models.Model):
     latitude = fields.FloatField()
     longitude = fields.FloatField()
     address = fields.TextField()
-    photo = fields.CharField(max_length=255)
-    media_type = fields.CharField(max_length=10)
-    photo_url = fields.TextField(null=True)
+    media_type = fields.CharField(max_length=50)
+    file_id = fields.CharField(max_length=255, null=True)
+    file_url = fields.CharField(max_length=255)
     is_verified = fields.BooleanField(default=False)
+    is_registered = fields.BooleanField(default=False)
     reference_face_encoding = fields.JSONField(null=True)
     profile_views = fields.IntField(default=0)
     daily_profile_views = fields.IntField(default=100)
     last_view_reset = fields.DatetimeField(auto_now_add=True)
-    referral_code = fields.CharField(max_length=50, null=True)
+    referral_code = fields.CharField(max_length=16, null=True, unique=True)
     referrals_count = fields.IntField(default=0)
     views_expiry_date = fields.DatetimeField(null=True)
     likes = fields.IntField(default=0)
@@ -75,8 +74,8 @@ class User(models.Model):
 
 class Gift(models.Model):
     id = fields.IntField(pk=True)
-    sender = fields.ForeignKeyField('data.User', related_name='sent_gifts')
-    receiver = fields.ForeignKeyField('data.User', related_name='received_gifts')
+    sender_id = fields.ForeignKeyField('data.User', related_name='sent_gifts')
+    receiver_id = fields.ForeignKeyField('data.User', related_name='received_gifts')
     type = fields.CharField(max_length=50)
     description = fields.CharField(max_length=200, null=True)
     media_url = fields.TextField(null=True)
@@ -85,6 +84,27 @@ class Gift(models.Model):
 
     class Meta:
         table = "gifts"
+
+
+
+class ReferralCode(models.Model):
+    code = fields.CharField(max_length=255, unique=True)
+    user = fields.ForeignKeyField('data.User', related_name="referral_codes", on_delete=fields.CASCADE)
+    created_at = fields.DatetimeField(auto_now_add=True)
+
+    class Meta:
+        table = "referral_codes"
+
+class LeomatchChange(StatesGroup):
+    CHANGE_NAME = State()
+    CHANGE_AGE = State()
+    CHANGE_MIN_AGE = State()
+    CHANGE_MAX_AGE = State()
+    CHANGE_CITY = State()
+    CHANGE_ADDRESS = State()
+    CHANGE_SEARCH = State()
+    CHANGE_ABOUT_ME = State()
+    CHANGE_PHOTO = State()
 
 class SexEnum(str, Enum):
     MALE = "male"
@@ -99,7 +119,7 @@ class MediaTypeEnum(str, Enum):
 class LeoMatchModel(models.Model):
     id = fields.IntField(pk=True)
     user = fields.ForeignKeyField("data.User", related_name="leo_matches")
-    photo = fields.CharField(max_length=255)
+    file_url = fields.CharField(max_length=255)
     media_type = fields.CharEnumField(MediaTypeEnum)
     sex = fields.CharEnumField(SexEnum)
     age = fields.IntField()

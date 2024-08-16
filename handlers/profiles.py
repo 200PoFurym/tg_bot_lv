@@ -68,7 +68,7 @@ async def like(message: types.Message, state: FSMContext, from_uid: int, to_uid:
         await message.answer(i18n.gettext("Не удалось поставить лайк"))
     await next(message, state)
 
-@router.callback_query(LeomatchProfileAction.filter(F.state(LeomatchProfiles.LOOCK)))
+@router.callback_query(LeomatchProfileAction.filter(LeomatchProfiles.LOOCK))
 async def choose_percent(query: types.CallbackQuery, state: FSMContext, callback_data: LeomatchProfileAction):
     await state.update_data(me=query.from_user.id)
     if callback_data.action == ProfileActionEnum.LIKE:
@@ -91,7 +91,7 @@ async def choose_percent(query: types.CallbackQuery, state: FSMContext, callback
     elif callback_data.action == ProfileActionEnum.DISLIKE:
         await next(query.message, state)
 
-@router.message(F.text == __("Отменить"), F.state(LeomatchProfiles.INPUT_MESSAGE))
+@router.message(F.text == __("Отменить"), LeomatchProfiles.INPUT_MESSAGE)
 async def cancel_message(message: types.Message, state: FSMContext):
     data = await state.get_data()
     leos = data.get("leos", [])
@@ -100,7 +100,7 @@ async def cancel_message(message: types.Message, state: FSMContext):
     await message.answer(i18n.gettext("Отменено"), reply_markup=types.ReplyKeyboardRemove())
     await next(message, state)
 
-@router.message(F.state(LeomatchProfiles.INPUT_MESSAGE))
+@router.message(LeomatchProfiles.INPUT_MESSAGE)
 async def send_message(message: types.Message, state: FSMContext):
     data = await state.get_data()
     selected_id = data.get("selected_id")
@@ -116,17 +116,17 @@ async def send_message(message: types.Message, state: FSMContext):
         return
     await like(message, state, message.from_user.id, selected_id, msg)
 
-@router.message(F.text == __("Да"), F.state(LeomatchProfiles.MANAGE_LIKES))
+@router.message(F.text == __("Да"), LeomatchProfiles.MANAGE_LIKES)
 async def view_likes(message: types.Message, state: FSMContext):
     await message.answer(i18n.gettext("Вот аккаунты, кому Вы понравились:"), reply_markup=types.ReplyKeyboardRemove())
     await next_like(message, state)
 
-@router.message(F.text == __("Нет"), F.state(LeomatchProfiles.MANAGE_LIKES))
+@router.message(F.text == __("Нет"), LeomatchProfiles.MANAGE_LIKES)
 async def clear_likes(message: types.Message):
     await message.answer(i18n.gettext("Все лайки удалены"), reply_markup=types.ReplyKeyboardRemove())
     await clear_all_likes(message.from_user.id)
 
-@router.callback_query(LeomatchLikeAction.filter(F.state(LeomatchProfiles.MANAGE_LIKE)))
+@router.callback_query(LeomatchLikeAction.filter(LeomatchProfiles.MANAGE_LIKE))
 async def manage_like(query: types.CallbackQuery, state: FSMContext, callback_data: LeomatchLikeAction):
     if callback_data.action == LikeActionEnum.LIKE:
         leo = await get_leo(callback_data.user_id)

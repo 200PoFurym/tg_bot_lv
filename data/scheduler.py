@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
 from models import User
@@ -12,9 +12,11 @@ async def recommend_users_periodically():
     except Exception as e:
         print(f"Error: {e}")
 
+
+
 async def reset_daily_views():
     now = datetime.now(timezone.utc)
-    await User.all().update(daily_profile_views=100, last_view_reset=now)
+    await User.all().update(daily_profile_views=100, views_expiry_date=now + timedelta(days=1))
 
 async def start_scheduler():
     scheduler = AsyncIOScheduler()

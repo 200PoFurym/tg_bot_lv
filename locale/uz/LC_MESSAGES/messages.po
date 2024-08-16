@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-08-09 20:35+0500\n"
-"PO-Revision-Date: 2024-08-10 14:15+0500\n"
+"POT-Creation-Date: 2024-08-11 21:08+0500\n"
+"PO-Revision-Date: 2024-08-11 21:10+0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uz\n"
 "Language-Team: uz <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: data/gift.py:16 search.py:10
 msgid "Найти пользователя"
-msgstr "Foydalanuvchini qidirish"
+msgstr "Foydalanuvchini topish"
 
 #: search.py:14
 msgid "Укажите имя пользователя для поиска."
@@ -28,19 +28,19 @@ msgstr "Qidirish uchun foydalanuvchi ismini kiriting."
 
 #: search.py:21
 msgid "Пользователи с таким именем не найдены."
-msgstr "Bu ismdagi foydalanuvchilar topilmadi."
+msgstr "Bunday ismli foydalanuvchilar topilmadi."
 
 #: search.py:41
 msgid "Нет пользователей, соответствующих вашим критериям."
-msgstr "Sizning mezonlaringizga mos foydalanuvchilar mavjud emas."
+msgstr "Sizning kriteriyalaringizga mos foydalanuvchilar topilmadi."
 
 #: search.py:48
 msgid "Произошла ошибка при получении рекомендаций. Пожалуйста, попробуйте позже."
-msgstr "Tavsiyalarni olishda xatolik yuz berdi. Iltimos, keyinroq urinib ko'ring."
+msgstr "Tavsiya olishda xatolik yuz berdi. Iltimos, keyinroq urinib ko'ring."
 
 #: data/gift.py:115 search.py:55
 msgid "Фото"
-msgstr "Rasm"
+msgstr "Foto"
 
 #: data/gift.py:116 search.py:56
 msgid "Имя"
@@ -56,7 +56,7 @@ msgstr "Shahar"
 
 #: data/gift.py:119 search.py:59
 msgid "Обо мне"
-msgstr "Ozim haqimda"
+msgstr "Men haqimda"
 
 #: data/gift.py:125 search.py:66
 msgid "Отправить"
@@ -66,17 +66,17 @@ msgstr "Yuborish"
 msgid "Произошла ошибка при отображении профиля. Пожалуйста, попробуйте позже."
 msgstr "Profilni ko'rsatishda xatolik yuz berdi. Iltimos, keyinroq urinib ko'ring."
 
-#: handlers/profiles.py:148 shortcuts.py:127
+#: handlers/profiles.py:147 shortcuts.py:126
 msgid "Начинай общаться!"
 msgstr "Gaplashishni boshlang!"
 
-#: shortcuts.py:129
+#: shortcuts.py:128
 msgid ""
 "Извините, Вы не сможете начать общение так как у пользователя приватный "
 "аккаунт"
 msgstr ""
-"Uzr, siz muloqotni boshlay olmaysiz, chunki foydalanuvchining xususiy "
-"hisobi bor"
+"Uzr, siz gaplashishni boshlay olmaysiz, chunki foydalanuvchining shaxsiy "
+"hisobi mavjud"
 
 #: data/gift.py:9
 msgid "flowers"
@@ -84,11 +84,11 @@ msgstr "gullar"
 
 #: data/gift.py:10
 msgid "cake"
-msgstr "tort"
+msgstr "torta"
 
 #: data/gift.py:11
 msgid "bunny"
-msgstr "quyon"
+msgstr "qichqiriq"
 
 #: data/gift.py:12
 msgid "bear"
@@ -104,7 +104,7 @@ msgstr "Qidirish uchun foydalanuvchi ismini kiriting"
 
 #: data/gift.py:30
 msgid "Пользователь с таким именем не найден."
-msgstr "Bu ismdagi foydalanuvchi topilmadi."
+msgstr "Bunday ismli foydalanuvchi topilmadi."
 
 #: data/gift.py:37
 msgid "Произошла ошибка при поиске пользователя. Пожалуйста, попробуйте позже."
@@ -116,7 +116,7 @@ msgstr "Sizga {gift} yuborildi"
 
 #: data/gift.py:49
 msgid "Произошла ошибка при отправке подарка. Пожалуйста, попробуйте позже."
-msgstr "Hediyeni yuborishda xatolik yuz berdi. Iltimos, keyinroq urinib ko'ring."
+msgstr "Sovg'a yuborishda xatolik yuz berdi. Iltimos, keyinroq urinib ko'ring."
 
 #: data/gift.py:62 data/gift.py:89
 msgid "Пользователь не найден."
@@ -124,11 +124,11 @@ msgstr "Foydalanuvchi topilmadi."
 
 #: data/gift.py:66 data/gift.py:93
 msgid "Вы не можете отправить подарок самому себе."
-msgstr "O'zingizga hediye yuborishingiz mumkin emas."
+msgstr "O'zingizga sovg'a yuborishingiz mumkin emas."
 
 #: data/gift.py:73
 msgid "Выберите тип подарка:"
-msgstr "Hediye turini tanlang:"
+msgstr "Sovg'a turini tanlang:"
 
 #: data/gift.py:75
 msgid "Произошла ошибка при обработке запроса."
@@ -136,19 +136,19 @@ msgstr "So'rovni qayta ishlashda xatolik yuz berdi."
 
 #: data/gift.py:98
 msgid "Неверный тип подарка."
-msgstr "Noto'g'ri hediye turi."
+msgstr "Noto'g'ri sovg'a turi."
 
 #: data/gift.py:105
 msgid "Подарок успешно отправлен!"
-msgstr "Hediye muvaffaqiyatli yuborildi!"
+msgstr "Sovg'a muvaffaqiyatli yuborildi!"
 
 #: data/gift.py:106
 msgid "Вы отправили {gift} {receiver_name}!"
-msgstr "Siz {gift} {receiver_name}ga yubordingiz!"
+msgstr "Siz {gift} {receiver_name} ga yubordingiz!"
 
 #: data/gift.py:109
 msgid "Произошла ошибка при выборе подарка."
-msgstr "Hediyeni tanlashda xatolik yuz berdi."
+msgstr "Sovg'a tanlashda xatolik yuz berdi."
 
 #: data/gift.py:130
 msgid "Произошла ошибка при просмотре профиля. Пожалуйста, попробуйте позже."
@@ -156,11 +156,11 @@ msgstr "Profilni ko'rishda xatolik yuz berdi. Iltimos, keyinroq urinib ko'ring."
 
 #: data/gift.py:133 keyboards/reply_kb.py:13
 msgid "Мои подарки"
-msgstr "Mening hediyalarim"
+msgstr "Mening sovg'alarim"
 
 #: data/gift.py:138
 msgid "Вы не получали подарков."
-msgstr "Siz hediya olmagansiz."
+msgstr "Siz sovg'alar olmadingiz."
 
 #: data/gift.py:145
 msgid ""
@@ -169,7 +169,7 @@ msgid ""
 "Дата: {date_sent}\n"
 "Медиа: {media_url}"
 msgstr ""
-"{sender_name}dan hediye\n"
+"Sovg'a {sender_name} dan\n"
 "Turi: {gift_type}\n"
 "Sana: {date_sent}\n"
 "Media: {media_url}"
@@ -178,9 +178,9 @@ msgstr ""
 msgid "Выберите язык / Select a language:"
 msgstr "Tilni tanlang / Select a language:"
 
-#: data/language.py:40
+#: data/language.py:42
 msgid "Этот язык не поддерживается."
-msgstr "Bu til qo'llab-quvvatlanmaydi."
+msgstr "Ushbu til qo'llab-quvvatlanmaydi."
 
 #: data/location.py:44 keyboards/reply_kb.py:8
 msgid "Найти поблизости"
@@ -188,7 +188,7 @@ msgstr "Yaqin atrofni qidirish"
 
 #: data/location.py:49 data/location.py:69
 msgid "Вы не зарегистрированы. Пожалуйста, зарегистрируйтесь сначала."
-msgstr "Siz ro'yxatdan o'tmagan bo'lsangiz. Iltimos, avval ro'yxatdan o'ting."
+msgstr "Siz ro'yxatdan o'tmagansiz. Iltimos, avval ro'yxatdan o'ting."
 
 #: data/location.py:53
 msgid ""
@@ -196,27 +196,27 @@ msgid ""
 "просмотров истек. Поделитесь своим реферальным кодом, чтобы получить "
 "дополнительные просмотры."
 msgstr ""
-"Profil ko'rish chegarasi tugadi yoki sizning ko'rish muddati tugadi. Qo'shimcha "
-"ko'rishlar olish uchun referal kodingizni baham ko'ring."
+"Siz profil ko'rish chekloviga yetdingiz yoki ko'rish muddati tugadi. "
+"Qo'shimcha ko'rish uchun referral kodingizni ulashing."
 
 #: data/location.py:61
 msgid "Поблизости никого нет."
 msgstr "Yaqin atrofda hech kim yo'q."
 
-#: data/location.py:63 handlers/registration.py:141 keyboards/reply_kb.py:7
+#: data/location.py:63 keyboards/reply_kb.py:7
 msgid "Получить реферальный код"
-msgstr "Referal kodini olish"
+msgstr "Referral kodni oling"
 
 #: data/location.py:79
 msgid ""
 "Вы получили 20 дополнительных просмотров за использование реферального "
 "кода!"
 msgstr ""
-"Siz referal kodini ishlatganingiz uchun 20 ta qo'shimcha ko'rish oldingiz!"
+"Referral kodini ishlatganingiz uchun 20 ta qo'shimcha ko'rish oldingiz!"
 
 #: data/location.py:81
 msgid "Неверный реферальный код."
-msgstr "Noto'g'ri referal kodi."
+msgstr "Noto'g'ri referral kod."
 
 #: data/location.py:91 keyboards/reply_kb.py:9
 msgid "Топ 100 девушек"
@@ -232,15 +232,15 @@ msgstr "Ko'rsatiladigan ma'lumot yo'q."
 
 #: data/location.py:100 keyboards/reply_kb.py:10
 msgid "Топ 100 парней"
-msgstr "Eng yaxshi 100 yigit"
+msgstr "Eng yaxshi 100 o'g'il"
 
 #: data/verify.py:23 data/verify.py:90
 msgid "покажите два пальца"
-msgstr "Ikki barmog'ingizni ko'rsating"
+msgstr "ikki barmoqni ko'rsating"
 
 #: data/verify.py:24 data/verify.py:92
 msgid "поднимите правую руку"
-msgstr "O'ng qo'lingizni ko'taring"
+msgstr "o'ng qo'lingizni ko'taring"
 
 #: data/verify.py:25
 msgid "сделайте знак ОК"
@@ -248,7 +248,7 @@ msgstr "OK belgisini qiling"
 
 #: data/verify.py:26 data/verify.py:96
 msgid "покажите ладонь"
-msgstr "Qo'lingizni oching"
+msgstr "palmatini ko'rsating"
 
 #: data/verify.py:40
 msgid "Сначала запросите верификацию с жестом."
@@ -260,7 +260,7 @@ msgstr "Iltimos, to'g'ri harakatni ko'rsating."
 
 #: data/verify.py:55
 msgid "Не удалось распознать лицо. Пожалуйста, попробуйте снова."
-msgstr "Yuzni aniqlash imkoniyati bo'lmadi. Iltimos, qayta urinib ko'ring."
+msgstr "Yuzni tanib bo'lmadi. Iltimos, qaytadan harakat qiling."
 
 #: data/verify.py:63
 msgid "Вы успешно верифицированы!"
@@ -268,15 +268,15 @@ msgstr "Siz muvaffaqiyatli tasdiqlandi!"
 
 #: data/verify.py:65
 msgid "Лицо не совпадает с эталонным. Верификация не пройдена."
-msgstr "Yuz namuna bilan mos kelmayapti. Tasdiqlash o'tmagan."
+msgstr "Yuz namuna bilan mos kelmaydi. Tasdiqlash muvaffaqiyatsiz."
 
 #: data/verify.py:69
 msgid "Вы верифицированы и ваша эталонная фотография сохранена!"
-msgstr "Siz tasdiqlandi va namuna rasm saqlandi!"
+msgstr "Siz tasdiqlandi va sizning namuna fotosuratingiz saqlandi!"
 
 #: data/verify.py:74
 msgid "Произошла ошибка при обработке фото. Пожалуйста, попробуйте снова."
-msgstr "Rasmni qayta ishlashda xato yuz berdi. Iltimos, qayta urinib ko'ring."
+msgstr "Fotosuratni qayta ishlashda xato yuz berdi. Iltimos, qaytadan harakat qiling."
 
 #: data/verify.py:94
 msgid "сделайте знак OK"
@@ -289,10 +289,10 @@ msgid ""
 "3. Изменить текст профиля.\n"
 "4. Просмотреть профили"
 msgstr ""
-"1. Profilimni tahrirlang.\n"
-"2. Rasm/video o'zgartiring.\n"
-"3. Profil matnini o'zgartiring.\n"
-"4. Profilni ko'ring"
+"1. Mening profilimni tahrirlash.\n"
+"2. Foto/video o'zgartirish.\n"
+"3. Profil matnini o'zgartirish.\n"
+"4. Profillarni ko'rish"
 
 #: handlers/profile.py:30 keyboards/reply_kb.py:96
 msgid "Выйти"
@@ -306,11 +306,11 @@ msgid ""
 "1. Да, деактивируйте мой профиль, пожалуйста.\n"
 "2. Нет, я хочу посмотреть свои матчи."
 msgstr ""
-"Shunda kimlarga yoqishingizni bilmay qolarsiz... Deaktivatsiya qilishga "
-"ishonchli misiz?\n"
+"Shunda siz kimga yoqqaningizni bilmay qolishingiz mumkin... Profilni "
+"faollashtirishni xohlaganingizga ishonchingiz komilmi?\n"
 "\n"
-"1. Ha, iltimos, profilimni deaktivatsiya qiling.\n"
-"2. Yo'q, men o'zimning moslashuvchilarimni ko'rmoqchiman."
+"1. Ha, iltimos, profilimni o'chiring.\n"
+"2. Yo'q, men o'z kelishuvlarimni ko'rmoqchiman."
 
 #: handlers/profile.py:45
 msgid ""
@@ -320,270 +320,238 @@ msgid ""
 "\n"
 "1. Просмотр профилей"
 msgstr ""
-"Umid qilamanki, siz mening yordamim bilan biron bir kishini uchratdingiz! \n"
-"Har doim suhbatlashishga tayyorman. Agar zeriksangiz, menga yozing - men sizga "
-"maxsus birini topaman.\n"
+"Umid qilamanki, men yordamim bilan kimnidir uchratdingiz! \n"
+"Doimo suhbatlashishga tayyorman. Agar zeriksangiz, menga yozing - sizga"
+" maxsus birini topaman.\n"
 "\n"
-"1. Profilni ko'rish"
+"1. Profillarni ko'rish"
 
 #: handlers/profile.py:61
 msgid "Отправьте фото или видео (до 15 сек)"
-msgstr "Rasm yoki video yuboring (15 soniyagacha)"
+msgstr "Foto yoki video yuboring (15 sekundgacha)"
 
 #: handlers/profile.py:66
 msgid "Введите новый текст профиля"
 msgstr "Yangi profil matnini kiriting"
 
-#: handlers/profile.py:73 handlers/profile.py:82 handlers/registration.py:47
+#: handlers/profile.py:73 handlers/profile.py:82 handlers/registration.py:39
 #: keyboards/inline_kb.py:40 keyboards/reply_kb.py:75
 msgid "Отменить"
 msgstr "Bekor qilish"
 
 #: handlers/profile.py:95 handlers/profile.py:101
 msgid "Пожалуйста, пришли видео не более 15 секунд"
-msgstr "Iltimos, 15 soniyadan oshmagan video yuboring"
+msgstr "Iltimos, 15 sekunddan oshmaydigan video yuboring"
 
-#: handlers/profiles.py:36
+#: handlers/profiles.py:35
 msgid "Нет больше пользователей"
-msgstr "Foydalanuvchilar qolmadi"
+msgstr "Yana foydalanuvchilar mavjud emas"
 
-#: handlers/profiles.py:57
+#: handlers/profiles.py:56
 msgid "Произошла ошибка"
 msgstr "Xato yuz berdi"
 
-#: handlers/profiles.py:61
+#: handlers/profiles.py:60
 msgid "Нет больше лайков"
-msgstr "Qo'shimcha yoqtirishlar yo'q"
+msgstr "Yana yoqtirishlar mavjud emas"
 
-#: handlers/profiles.py:66
+#: handlers/profiles.py:65
 msgid "Лайк отправлен"
-msgstr "Yo'qish yuborildi"
+msgstr "Yoqtirildi"
 
-#: handlers/profiles.py:69
+#: handlers/profiles.py:68
 msgid "Не удалось поставить лайк"
-msgstr "Yo'qishni qo'yish imkoniyati bo'lmadi"
+msgstr "Yoqtirish muvaffaqiyatsiz bo'ldi"
 
-#: handlers/profiles.py:79
+#: handlers/profiles.py:78
 msgid "Введите сообщение или отправьте видео (макс 15 сек)"
-msgstr "Xabar yozing yoki video yuboring (maksimal 15 soniya)"
+msgstr "Xabar yozing yoki video yuboring (15 sekundgacha)"
 
-#: handlers/profiles.py:87
+#: handlers/profiles.py:86
 msgid ""
 "Вы точно хотите подать жалобу? Учтите, если жалоба будет необоснованной, "
 "то вы сами можете быть забанены"
 msgstr ""
-"Haqiqatan ham shikoyat qilishni xohlaysizmi? E'tibor bering, agar shikoyat "
-"asossiz bo'lsa, siz o'zingiz ham bloklanishingiz mumkin."
+"Shikoyat qilishni aniq xohlaysizmi? Agar shikoyat asoslanmagan bo'lsa,"
+" siz ham taqiq ostida bo'lishingiz mumkin"
 
-#: handlers/profiles.py:101
+#: handlers/profiles.py:100
 msgid "Отменено"
 msgstr "Bekor qilindi"
 
-#: handlers/profiles.py:116
+#: handlers/profiles.py:115
 msgid "Пожалуйста, напишите текст или отправьте видео"
 msgstr "Iltimos, matn yozing yoki video yuboring"
 
-#: handlers/profiles.py:122
+#: handlers/profiles.py:121
 msgid "Вот аккаунты, кому Вы понравились:"
-msgstr "Mana sizga yoqqan hisoblar:"
+msgstr "Mana sizga yoqqan akkauntlar:"
 
-#: handlers/profiles.py:127
+#: handlers/profiles.py:126
 msgid "Все лайки удалены"
 msgstr "Barcha yoqtirishlar o'chirildi"
 
-#: handlers/profiles.py:153
+#: handlers/profiles.py:152
 msgid ""
 "Извините, Вы не сможете начать общение, так как у пользователя приватный "
 "аккаунт"
 msgstr ""
-"Uzr, siz suhbatni boshlay olmaysiz, chunki foydalanuvchining maxfiy hisoblari bor."
+"Kechirasiz, siz suhbatni boshlay olmaysiz, chunki foydalanuvchining akkaunti"
+" xususiy"
 
-#: handlers/profiles.py:171
-msgid ""
-"Пользователь: @{sender_user} ({sender_user_id}) пожаловался на \n"
-"Пользователя: @{account_user} ({account_user_id})\n"
-msgstr ""
-"Foydalanuvchi: @{sender_user} ({sender_user_id}) shikoyat qildi\n"
-"Foydalanuvchi: @{account_user} ({account_user_id})\n"
-
-#: handlers/profiles.py:182
-msgid "Жалоба отправлена"
-msgstr "Shikoyat yuborildi"
-
-#: handlers/registration.py:20
-msgid "Вы успешно отменили регистрацию! Возвращаемся в главное меню."
-msgstr "Siz muvaffaqiyatli ro'yxatdan chiqardingiz! Asosiy menyuga qaytamiz."
-
-#: handlers/registration.py:28
-msgid ""
-"Теперь пришли фото или запиши видео 👍 (до 15 сек), его будут видеть "
-"другие пользователи"
-msgstr ""
-"Endi rasm yuboring yoki video yozing 👍 (15 soniyagacha), boshqa foydalanuvchilar "
-"uni ko'rishadi"
-
-#: handlers/registration.py:39
-msgid "Всё верно?"
-msgstr "Hammasi to'g'ri?"
-
-#: handlers/registration.py:42 keyboards/reply_kb.py:30
+#: handlers/registration.py:34 keyboards/reply_kb.py:30
 msgid "Давай, начнем!"
-msgstr "Keling, boshlaymiz!"
+msgstr "Keling, boshlaylik!"
 
-#: handlers/registration.py:44
+#: handlers/registration.py:36
 msgid ""
 "Настоятельно рекомендуем указать username или в настройках разрешение на "
-"пересылку сообщения иначе Вам не смогут написать те, кого вы лайкните"
+"пересылку сообщения иначе вам не смогут написать те, кого вы лайкнете"
 msgstr ""
-"Username'ni ko'rsatishni yoki sozlamalarda xabar yuborish ruxsatini berishni "
-"tavsiya qilamiz, aks holda siz yoqtirgan odamlar sizga yozolmaydi."
+"Username ko'rsatishni yoki sozlamalarda xabar yuborishga ruxsat berishni"
+" qat'iy tavsiya qilamiz, aks holda siz yoqtirganlar sizga yozolmaydi"
 
-#: handlers/registration.py:49
-msgid "Отменена регистрация!"
+#: handlers/registration.py:41
+msgid "Регистрация отменена!"
 msgstr "Ro'yxatdan o'tish bekor qilindi!"
 
-#: handlers/registration.py:57
-msgid "Теперь выберите минимальный возраст"
-msgstr "Endi minimal yoshni tanlang"
+#: handlers/registration.py:45
+msgid "Вы успешно отменили регистрацию! Возвращаемся в главное меню."
+msgstr "Ro‘yxatdan o‘tishni muvaffaqiyatli bekor qildingiz! Asosiy menyuga qaytamiz."
 
-#: handlers/registration.py:60 handlers/registration.py:70
-#: handlers/registration.py:83
-msgid "Пожалуйста, введите возраст цифрами"
-msgstr "Iltimos, yoshni raqamlar bilan kiriting."
-
-#: handlers/registration.py:67
-msgid "Теперь выберите максимальный возраст"
-msgstr "Endi maksimal yoshni tanlang"
-
-#: handlers/registration.py:79
-msgid "Вы задали возрастной диапазон от"
-msgstr "Siz yosh oralig'ini belgiladingiz"
-
-#: handlers/registration.py:79
-msgid "до"
-msgstr "gacha"
-
-#: handlers/registration.py:80
-msgid "Теперь определимся с полом!"
-msgstr "Endi jinsni aniqlaylik!"
-
-#: handlers/registration.py:85 keyboards/reply_kb.py:41
-msgid "Я парень"
-msgstr "Men yigitman"
-
-#: handlers/registration.py:89 keyboards/reply_kb.py:42
-msgid "Я девушка"
-msgstr "Men qizman"
-
-#: handlers/registration.py:95
-msgid "Пожалуйста, укажите Ваш пол, нажав на кнопку"
-msgstr "Iltimos, jinsni tanlang, tugmani bosish orqali."
-
-#: handlers/registration.py:97 keyboards/reply_kb.py:64
-msgid "Парня"
-msgstr "Yigit"
-
-#: handlers/registration.py:101 keyboards/reply_kb.py:63
-msgid "Девушку"
-msgstr "Qiz"
-
-#: handlers/registration.py:105 keyboards/reply_kb.py:65
-msgid "Мне всё равно"
-msgstr "Menga farqi yo'q"
-
-#: handlers/registration.py:114
-msgid "Пожалуйста, выберите правильный пол."
-msgstr "Iltimos, to'g'ri jinsni tanlang."
-
-#: handlers/registration.py:117
-msgid "Кого Вы ищите?"
-msgstr "Kimni qidirmoqdasiz?"
-
-#: handlers/registration.py:124
-msgid "Пожалуйста, выберите правильный вариант поиска."
-msgstr "Iltimos, to'g'ri qidiruv variantini tanlang."
-
-#: handlers/registration.py:127
-msgid "Из какого ты города?"
-msgstr "Qaysi shahardan ekansiz?"
-
-#: handlers/registration.py:135
-msgid "Как мне тебя называть?"
-msgstr "Sizni qanday chaqiraman?"
-
-#: handlers/registration.py:149
-msgid "Пожалуйста, сначала зарегистрируйтесь, чтобы получить реферальный код."
-msgstr "Iltimos, avval ro'yxatdan o'ting, referral kodni olish uchun."
-
-#: handlers/registration.py:156
-msgid "Пожалуйста, введите имя не более 15 символов"
-msgstr "Iltimos, 15 ta belgidan oshmaydigan ismni kiriting."
-
-#: handlers/registration.py:163
-msgid "Ваш профиль был успешно создан!"
-msgstr "Profilingiz muvaffaqiyatli yaratildi!"
-
-#: handlers/registration.py:163
-msgid "Вы можете просматривать других пользователей, когда они будут вас лайкать!"
-msgstr "Siz boshqa foydalanuvchilarni ko'rishingiz mumkin, ular sizni yoqtirganlarida!"
-
-#: handlers/registration.py:178 keyboards/inline_kb.py:30
-#: keyboards/reply_kb.py:52 keyboards/reply_kb.py:85
-msgid "Да"
-msgstr "Ha"
-
-#: handlers/registration.py:183
-msgid "Произошла ошибка при регистрации. Пожалуйста, попробуйте снова."
-msgstr "Ro'yxatdan o'tishda xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring."
-
-#: handlers/registration.py:200
-msgid ""
-"Ваша регистрация завершена! Теперь вы можете искать и просматривать "
-"профили других пользователей."
-msgstr ""
-"Ro'yxatdan o'tishingiz yakunlandi! Endi boshqa foydalanuvchilarning "
-"profilini qidirishingiz va ko'rishingiz mumkin."
-
-#: handlers/registration.py:202 keyboards/inline_kb.py:31
-#: keyboards/reply_kb.py:86
-msgid "Нет"
-msgstr "Yo'q"
-
-#: handlers/registration.py:203
-msgid "Регистрация отменена."
-msgstr "Ro'yxatdan o'tish bekor qilindi."
-
-#: handlers/registration.py:206
-msgid "Пожалуйста, ответьте 'Да' или 'Нет'."
-msgstr "Iltimos, 'Ha' yoki 'Yo'q' deb javob bering."
-
-#: handlers/registration.py:214
-msgid "Пожалуйста, введите возраст цифрами."
-msgstr "Iltimos, yoshni raqamlar bilan kiriting."
-
-#: handlers/registration.py:217
-msgid "Теперь укажите город, в котором вы находитесь."
-msgstr "Endi siz joylashgan shaharni ko'rsating."
-
-#: handlers/registration.py:226
+#: handlers/registration.py:56
 msgid ""
 "Рекомендуем пройти верификацию, чтобы другие пользователи доверяли вам "
 "больше."
-msgstr ""
-"Boshqa foydalanuvchilar sizga ko'proq ishonishi uchun tasdiqlashni "
-"o'tishni tavsiya qilamiz."
+msgstr "Boshqa foydalanuvchilar sizga ko‘proq ishonishi uchun verifikatsiyadan o‘ting."
 
-#: handlers/registration.py:228
+#: handlers/registration.py:58
 msgid "Вы не завершили регистрацию. Давайте начнем с вашего возраста."
-msgstr "Ro'yxatdan o'tishni yakunlamadingiz. Yoshingizdan boshlaylik."
+msgstr "Siz ro‘yxatdan o‘tishni tugatmadingiz. Keling, yoshingizdan boshlaylik."
 
-#: handlers/registration.py:231
+#: handlers/registration.py:61
 msgid "Добро пожаловать обратно!"
-msgstr "Xush kelibsiz qaytib!"
+msgstr "Yana xush kelibsiz!"
 
-#: handlers/registration.py:233
+#: handlers/registration.py:63
 msgid "Вы не зарегистрированы. Давайте начнем с вашего возраста."
-msgstr "Siz ro'yxatdan o'tmagansiz. Yoshingizdan boshlaylik."
+msgstr "Siz ro‘yxatdan o‘tmagan ekansiz. Keling, yoshingizdan boshlaylik."
+
+#: handlers/registration.py:77 handlers/registration.py:103
+#: handlers/registration.py:118
+msgid "Пожалуйста, введите возраст цифрами."
+msgstr "Iltimos, yoshni raqamlar bilan kiriting."
+
+#: handlers/registration.py:82
+msgid "Теперь укажите минимальный возраст партнера."
+msgstr "Endi sherikning minimal yoshini kiriting."
+
+#: handlers/registration.py:88
+msgid "Произошла ошибка при обработке вашего запроса. Попробуйте снова позже."
+msgstr "So‘rovingizni qayta ishlashda xato yuz berdi. Keyinroq qayta urinib ko‘ring."
+
+#: handlers/registration.py:100
+msgid "Теперь выберите максимальный возраст партнера."
+msgstr "Endi sherikning maksimal yoshini tanlang."
+
+#: handlers/registration.py:112
+msgid "Максимальный возраст не может быть меньше минимального. Попробуйте снова."
+msgstr "Maksimal yosh minimal yoshdan kichik bo‘lishi mumkin emas. Qayta urinib ko‘ring."
+
+#: handlers/registration.py:115
+msgid ""
+"Возрастной диапазон установлен. Теперь укажите город, в котором вы "
+"находитесь."
+msgstr "Yosh diapazoni belgilandi. Endi sizning joylashgan shahringizni kiriting."
+
+#: handlers/registration.py:127
+msgid ""
+"Теперь укажите ваше местоположение. Нажмите на кнопку, чтобы отправить "
+"геопозицию:"
+msgstr "Endi joylashuvingizni ko‘rsating. Geopozitsiyani yuborish uchun tugmani bosing:"
+
+#: handlers/registration.py:130
+msgid "Отправить местоположение"
+msgstr "Joylashuvni yuborish"
+
+#: handlers/registration.py:153
+msgid "Пожалуйста, введите имя не более 15 символов."
+msgstr "Iltimos, 15 ta belgidan oshmaydigan ism kiriting."
+
+#: handlers/registration.py:156
+msgid "Укажите ваш пол"
+msgstr "Jinsingizni ko‘rsating"
+
+#: handlers/registration.py:161
+msgid "Пожалуйста, укажите Ваш пол, нажав на кнопку"
+msgstr "Iltimos, jinsingizni tanlang va tugmani bosing"
+
+#: handlers/registration.py:163 keyboards/reply_kb.py:41
+msgid "Я парень"
+msgstr "Men yigitman"
+
+#: handlers/registration.py:166
+msgid "Что вы ищете? Парня, Девушку, Все равно"
+msgstr "Nimani izlayapsiz? Yigit, Qiz, Farqi yo‘q"
+
+#: handlers/registration.py:169 keyboards/reply_kb.py:42
+msgid "Я девушка"
+msgstr "Men qizman"
+
+#: handlers/registration.py:172
+msgid "Кого вы ищите"
+msgstr "Kimni izlayapsiz"
+
+#: handlers/registration.py:175 keyboards/reply_kb.py:64
+msgid "Парня"
+msgstr "Yigit"
+
+#: handlers/registration.py:178 handlers/registration.py:184
+#: handlers/registration.py:190 handlers/registration.py:200
+msgid "Напишите что-нибудь о себе."
+msgstr "O‘zingiz haqingizda biror narsa yozing."
+
+#: handlers/registration.py:181 keyboards/reply_kb.py:63
+msgid "Девушку"
+msgstr "Qiz"
+
+#: handlers/registration.py:187 keyboards/reply_kb.py:65
+msgid "Мне всё равно"
+msgstr "Menga farqi yo‘q"
+
+#: handlers/registration.py:197
+msgid "Пожалуйста, введите 'Парня', 'Девушку' или 'Все равно'."
+msgstr "'Yigit', 'Qiz' yoki 'Farqi yo‘q' deb kiriting."
+
+#: handlers/registration.py:207
+msgid "Теперь пришлите фото или запишите видео до 15 секунд."
+msgstr "Endi 15 soniyagacha bo‘lgan video yoki fotosurat yuboring."
+
+#: handlers/registration.py:222
+msgid "Ваше фото/видео сохранено. Вы готовы завершить регистрацию? (Да/Нет)"
+msgstr "Sizning fotosurat/video saqlandi. Ro‘yxatdan o‘tishni tugatishga tayyormisiz? (Ha/Yo‘q)"
+
+#: handlers/registration.py:227
+msgid "да"
+msgstr "ha"
+
+#: handlers/registration.py:248
+msgid ""
+"Ваша регистрация завершена! Теперь вы можете искать и просматривать "
+"профили других пользователей."
+msgstr "Sizning ro‘yxatdan o‘tishingiz tugadi! Endi boshqa foydalanuvchilarning profillarini qidirishingiz va ko‘rishingiz mumkin."
+
+#: handlers/registration.py:250
+msgid "нет"
+msgstr "yo‘q"
+
+#: handlers/registration.py:251
+msgid "Регистрация отменена."
+msgstr "Ro‘yxatdan o‘tish bekor qilindi."
+
+#: handlers/registration.py:254
+msgid "Пожалуйста, ответьте 'Да' или 'Нет'."
+msgstr "'Ha' yoki 'Yo‘q' deb javob bering."
 
 #: handlers/start.py:24
 msgid ""
@@ -591,54 +559,57 @@ msgid ""
 "Сейчас аккаунт выключен от поиска, если Вы начнете просматривать "
 "аккаунты, то Ваш аккаунт вновь включится для поиска другим пользователем"
 msgstr ""
-"\n"
-"Hozirda akkaunt qidiruvdan o'chirilgan, agar siz akkauntlarni ko'rsata "
-"boshlasangiz, akkauntingiz yana boshqa foydalanuvchilar uchun qidiruvga "
-"qaytadi."
+"Endi hisobingiz qidiruvdan o‘chirildi. Agar siz profillarni ko‘rsata boshlasangiz, hisobingiz yana boshqa foydalanuvchilar uchun qidiruvga qaytadi."
 
 #: handlers/start.py:28
 msgid ""
 "\n"
 "3. Больше не ищу"
 msgstr ""
-"\n"
-"3. Qidirmayman"
+"3. Endi qidirmayman"
 
 #: handlers/start.py:30
 msgid ""
 "1. Просмотр профилей.\n"
 "2. Мой профиль.{text}"
 msgstr ""
-"1. Profilarni ko'rish.\n"
-"2. Mening profilim.{text}"
+"1. Profilni ko‘rish.\n"
+"2. Mening profilingiz.{text}"
 
 #: handlers/start.py:42
 msgid ""
 "Добро пожаловать! Я - бот для знакомств. Я помогу тебе найти свою вторую "
 "половинку."
 msgstr ""
-"Xush kelibsiz! Men tanishuv botiman. Sizga ikkinchi yarmingizni topishda "
-"yordam beraman."
+"Xush kelibsiz! Men tanishuv botiman. Sizga ikkinchi yarmongizni topishga yordam beraman."
 
 #: handlers/start.py:49
 msgid "Ваш аккаунт заблокирован"
-msgstr "Akkauntingiz bloklangan"
+msgstr "Hisobingiz bloklangan"
 
 #: handlers/start.py:55
 msgid "Запустите WebApp"
-msgstr "WebApp'ni ishga tushiring"
+msgstr "WebAppni ishga tushiring"
 
 #: handlers/start.py:60
 msgid "Попробуйте наш WebAPP знакомства"
-msgstr "Bizning tanishuv WebApp'ni sinab ko'ring"
+msgstr "Bizning WebAPP tanishuvimizni sinab ko‘ring"
+
+#: keyboards/inline_kb.py:30 keyboards/reply_kb.py:52 keyboards/reply_kb.py:85
+msgid "Да"
+msgstr "Ha"
+
+#: keyboards/inline_kb.py:31 keyboards/reply_kb.py:86
+msgid "Нет"
+msgstr "Yo‘q"
 
 #: keyboards/inline_kb.py:38
 msgid "Заблокировать"
-msgstr "Blokirovka qilish"
+msgstr "Bloklash"
 
 #: keyboards/inline_kb.py:39
 msgid "Заблокировать отправителя"
-msgstr "Yuboruvchini blokirovka qilish"
+msgstr "Yuboruvchini bloklash"
 
 #: keyboards/inline_kb.py:48
 msgid "Написать"
@@ -646,11 +617,11 @@ msgstr "Yozish"
 
 #: keyboards/reply_kb.py:6 keyboards/reply_kb.py:53
 msgid "Изменить анкету"
-msgstr "Profilni o'zgartirish"
+msgstr "Anketani o‘zgartirish"
 
 #: keyboards/reply_kb.py:11
 msgid "Отправить подарок"
-msgstr "Sovg'a yuborish"
+msgstr "Hediyaga yuborish"
 
 #: keyboards/reply_kb.py:12
 msgid "Профиль"

@@ -1,14 +1,33 @@
 from aiogram import types, Router, F
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.fsm.context import FSMContext
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
 from tortoise.queryset import Q
 from models import User
 from main import bot, i18n
 from data.gift import GIFT_MEDIA
+from aiogram.fsm.state import StatesGroup, State
 
 router = Router()
 
+
+# Определите состояния для FSM
+class SearchStates(StatesGroup):
+    searching = State()
+
+def get_cancel_keyboard():
+    keyboard = ReplyKeyboardMarkup(
+        keyboard=[
+            [KeyboardButton(text=i18n.gettext("Отмена"))]
+        ],
+        resize_keyboard=True,
+        one_time_keyboard=True,
+        row_width=2
+
+    )
+    return keyboard
+
 @router.message(F.text.startswith(i18n.gettext("Найти пользователя")))
-async def search_user(message: types.Message):
+async def search_user(message: types.Message, state: FSMContext):
     args = message.text.split(maxsplit=1)[1].strip()
     if not args:
         await message.reply(i18n.gettext("Укажите имя пользователя для поиска."))
@@ -21,8 +40,23 @@ async def search_user(message: types.Message):
         await message.reply(i18n.gettext("Пользователи с таким именем не найдены."))
         return
 
+    await state.set_state(SearchStates.searching)
+    await state.update_data(search_name=search_name)
+
     for user in found_users:
         await view_profile(message.from_user.id, user)
+
+    await message.reply(i18n.gettext("Если вы хотите отменить поиск, нажмите 'Отмена'."), reply_markup=get_cancel_keyboard())
+
+@router.message(F.text == i18n.gettext("Отмена"), SearchStates.searching)
+async def cancel_search(message: types.Message, state: FSMContext):
+    await state.clear()
+    await message.reply(i18n.gettext("Поиск был отменен."))
+
+@router.message(F.text != i18n.gettext("Отмена"), SearchStates.searching)
+async def handle_other_buttons(message: types.Message, state: FSMContext):
+    await message.reply(i18n.gettext("Поиск отменен. Если вы хотите начать новый поиск, введите команду снова."))
+    await state.clear()
 
 async def recommend_users(user: User):
     min_age = user.min_age
@@ -52,7 +86,7 @@ async def view_profile(user_id: int, viewed_user: User):
     try:
         user = await User.get(user_id=user_id)
         profile_info = (
-            f"{i18n.gettext('Фото')}: {viewed_user.photo_url}\n"
+            f"{i18n.gettext('Фото')}: {viewed_user.file_url}\n"
             f"{i18n.gettext('Имя')}: {viewed_user.full_name}\n"
             f"{i18n.gettext('Возраст')}: {viewed_user.age}\n"
             f"{i18n.gettext('Город')}: {viewed_user.city}\n"
